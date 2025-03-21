@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "dev": "nodemon ./AluraDocs/SRC/server.js"
+    "dev": "nodemon ./AluraDocs/SRC/socketBack.js"
   },
   "repository": {
     "type": "git",

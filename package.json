@@ -2,7 +2,7 @@
   "name": "websocket",
   "version": "1.0.0",
   "description": "Websocket feito com ajuda da alura",
-  "main": "./AluraDocs/server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "jest",

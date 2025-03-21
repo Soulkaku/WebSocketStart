@@ -19,6 +19,4 @@ HTTPserver.listen(PORT, () => { //APP -> HTTPserver
     console.log("Listen!");
 });
 
-io.on("connection", () => {
-    console.log("Client connected")
-});
+export default io;

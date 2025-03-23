@@ -5,5 +5,6 @@ io.on("connection", (socket) => {
 
     socket.on("campo_texto", (texto) => {
         console.log(texto);
-    })
-})
+        socket.broadcast.emit("campo_textoClients", texto); //send to all clients except you
+    });
+});

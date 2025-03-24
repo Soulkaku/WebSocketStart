@@ -7,4 +7,10 @@ io.on("connection", (socket) => {
         console.log(texto);
         socket.broadcast.emit("campo_textoClients", texto); //send to all clients except you
     });
+
+    socket.on("disconnect", (motivo) => {
+        console.log(`O cliente ${socket.id} se desconectou, 
+            motivo: ${ motivo }`);
+    });
 });
+

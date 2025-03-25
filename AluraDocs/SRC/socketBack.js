@@ -16,8 +16,8 @@ const documentos = [
 ];
 
 io.on("connection", (socket) => {
-    console.log(`O cliente (${socket.id}) se conectou em ${nomeDocumento}`);
     socket.on("selecionar_documento", (nomeDocumento, devolverTexto) => {
+        console.log(`O cliente (${socket.id}) se conectou em ${nomeDocumento}`);
         socket.join(nomeDocumento);
 
         const documento = encontrarDocumento(nomeDocumento);
